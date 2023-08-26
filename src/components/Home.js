@@ -7,7 +7,7 @@ import Title from './Title';
 export default function Home() {
   return (<>
     <Hero>
-      <Title><FlyIn seq={0} text="Hi, I'm Jacob." /></Title>
+      <Title><FlyIn seq={0} text="Hi, I'm Jacob|has-accent2 ." /></Title>
       <Subtitle><FlyIn seq={1} text="Interested in what I do? Have a look around!" /></Subtitle>
     </Hero>
     <Container>
