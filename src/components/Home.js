@@ -1,12 +1,14 @@
 import Container from './Container';
 import FlyIn from './FlyIn';
 import Hero from './Hero';
+import Subtitle from './Subtitle';
+import Title from './Title';
 
 export default function Home() {
   return (<>
     <Hero>
-      <p><FlyIn seq={1} text="Hi, I'm Jacob." /></p>
-      <p><FlyIn seq={2} text="Interested in what I do? Have a look around!" /></p>
+      <Title><FlyIn seq={1} text="Hi, I'm Jacob." /></Title>
+      <Subtitle><FlyIn seq={2} text="Interested in what I do? Have a look around!" /></Subtitle>
     </Hero>
     <Container>
       <p>Content A</p>

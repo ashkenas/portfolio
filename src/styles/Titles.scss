@@ -1,0 +1,12 @@
+@use 'base';
+
+.title:has(+ p) {
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #444444;
+  font-size: 1.25em;
+  font-weight: bold;
+}
