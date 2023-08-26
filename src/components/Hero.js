@@ -2,7 +2,7 @@ import '../styles/Hero.scss';
 
 export default function Hero({ children }) {
   return (
-    <div class="hero">
+    <div className="hero">
       {children}
     </div>
   );
