@@ -16,3 +16,11 @@ $spawn-curve: cubic-bezier(0.22, 0.61, 0.36, 1);
 %unhide {
   animation: .5s $spawn-curve 0s 1 normal forwards unhide-frames;
 }
+
+.has-accent2 {
+  color: $c-text-accent2;
+}
+
+.inline-block {
+  display: inline-block;
+}
