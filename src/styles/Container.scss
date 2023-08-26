@@ -1,0 +1,12 @@
+@use 'base';
+
+.container {
+  @extend %unhide;
+  margin: 1rem auto 0 auto;
+  max-width: 900px;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  border-radius: .25rem;
+  background-color: base.$c-bg-content;
+  transform: scale(0);
+}

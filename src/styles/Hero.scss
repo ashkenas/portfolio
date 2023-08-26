@@ -1,0 +1,16 @@
+@use "base";
+
+.hero {
+  @extend %unhide;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: base.$c-bg-accent;
+  transform-origin: 50% 0%;
+  transform: scaleY(0);
+}

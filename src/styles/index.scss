@@ -1,3 +1,5 @@
+@use 'base';
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  background-color: base.$c-bg;
 }
 
 *, *::after, *::before {
