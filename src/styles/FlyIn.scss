@@ -1,0 +1,13 @@
+@use 'base';
+
+@keyframes flyin-frames {
+  to {
+    transform: unset;
+  }
+}
+
+.flyin {
+  display: inline-block;
+  transform: translateX(100vw);
+  animation: .5s base.$spawn-curve 0s 1 normal forwards flyin-frames;
+}
