@@ -12,36 +12,33 @@ $arrow-half-width: math.div($arrow-width, 2);
   margin: 1rem auto 0 auto;
   max-width: 900px;
   width: calc(100% - 2rem);
-  border-radius: .5rem;
   transform-origin: 50% 25%;
   transform: scale(0%);
   text-decoration: none;
   color: inherit;
+  border: 1px solid base.$c-text-accent;
 
-  & {
-    &::after, &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: $arrow-width;
-      border-radius: $arrow-half-width;
-      height: 16px;
-      right: 1rem;
-    }
-  
-    &::after {
-      bottom: calc(50% - $arrow-half-width);
-      background-color: base.$c-text;
-      transform-origin: 50% calc(100% - $arrow-half-width);
-      transform: rotate(315deg);
-    }
-  
-    &::before {
-      top: calc(50% - $arrow-half-width);
-      background-color: base.$c-text;
-      transform-origin: 50% $arrow-half-width;
-      transform: rotate(45deg);
-    }
+  &::after, &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $arrow-width;
+    border-radius: $arrow-half-width;
+    height: 16px;
+    right: 1rem;
+    background-color: base.$c-text-accent;
+  }
+
+  &::after {
+    bottom: calc(50% - $arrow-half-width);
+    transform-origin: 50% calc(100% - $arrow-half-width);
+    transform: rotate(315deg);
+  }
+
+  &::before {
+    top: calc(50% - $arrow-half-width);
+    transform-origin: 50% $arrow-half-width;
+    transform: rotate(45deg);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -50,5 +47,13 @@ $arrow-half-width: math.div($arrow-width, 2);
 
   p {
     margin: 0;
+  }
+}
+
+.big-nav-btn:hover {
+  box-shadow: 0px 4px 10px 0px #00000030;
+
+  &::after, &::before {
+    background-color: base.$c-text;
   }
 }

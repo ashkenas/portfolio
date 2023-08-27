@@ -6,10 +6,10 @@
   max-width: 900px;
   width: calc(100% - 2rem);
   padding: 1rem;
-  border-radius: .5rem;
   background-color: base.$c-bg-content;
   transform-origin: 50% 25%;
   transform: scale(0);
+  border: 1px solid base.$c-text-accent;
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
