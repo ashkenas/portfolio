@@ -1,0 +1,23 @@
+@use 'base';
+
+nav.navbar {
+  display: flex;
+  background-color: base.$c-bg-accent;
+  justify-content: flex-end;
+
+  a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2em;
+  }
+
+  a:has(~a:hover), a:hover ~ a {
+    color: base.$c-text-light;
+  }
+
+  &:has(+.hero) a {
+    padding-bottom: 0;
+  }
+}
