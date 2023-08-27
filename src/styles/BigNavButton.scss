@@ -12,7 +12,8 @@ $arrow-half-width: math.div($arrow-width, 2);
   margin: 1rem auto 0 auto;
   max-width: 900px;
   width: calc(100% - 2rem);
-  border-radius: .25rem;
+  border-radius: .5rem;
+  transform-origin: 50% 25%;
   transform: scale(0%);
   text-decoration: none;
   color: inherit;
@@ -41,5 +42,13 @@ $arrow-half-width: math.div($arrow-width, 2);
       transform-origin: 50% $arrow-half-width;
       transform: rotate(45deg);
     }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0;
   }
 }

@@ -14,7 +14,7 @@ export default function FlyIn({ text, seq }) {
         continue;
       }
       const delay = (spacing * i) + offset;
-      const classes = `flyin${accented ? ' has-accent2' : ''}`;
+      const classes = `flyin${accented ? ' has-white' : ''}`;
       letters.push(
         <span className={classes} key={i} style={{ animationDelay: `${delay}s` }}>
           {c}

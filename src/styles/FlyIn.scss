@@ -3,11 +3,13 @@
 @keyframes flyin-frames {
   to {
     transform: unset;
+    opacity: 100%;
   }
 }
 
 .flyin {
   display: inline-block;
-  transform: translateX(100vw);
+  opacity: 0.01;
+  transform: translateX(5em);
   animation: .5s base.$spawn-curve 0s 1 normal forwards flyin-frames;
 }

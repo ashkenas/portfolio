@@ -1,8 +1,8 @@
 $c-bg: #DFD9EC;
 $c-bg-accent: #C3ACCE;
-$c-bg-content: #ffffff;
+$c-bg-content: #FFFFFF;
 $c-text: #000000;
-$c-text-accent: #89909f;
+$c-text-accent: #89909F;
 $c-text-accent2: #538083;
 
 $spawn-curve: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -19,6 +19,10 @@ $spawn-curve: cubic-bezier(0.22, 0.61, 0.36, 1);
 
 .has-accent2 {
   color: $c-text-accent2;
+}
+
+.has-white {
+  color: #FFFFFF;
 }
 
 .inline-block {
