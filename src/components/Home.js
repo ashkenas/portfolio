@@ -1,3 +1,4 @@
+import BigNavButton from './BigNavButton';
 import Container from './Container';
 import FlyIn from './FlyIn';
 import Hero from './Hero';
@@ -14,11 +15,11 @@ export default function Home() {
       <Title level={2}>About Me</Title>
       <p>I am a person. I do things. Why are you looking through my commit history?</p>
     </Container>
-    <Container seq={2}>
-      <p>Projects &gt;</p>
-    </Container>
-    <Container seq={3}>
-      <p>Work Experience &gt;</p>
-    </Container>
+    <BigNavButton seq={2} to='./projects'>
+      <Title level={2}>Projects</Title>
+    </BigNavButton>
+    <BigNavButton seq={3} to='./work'>
+      <Title level={2}>Work Experience</Title>
+    </BigNavButton>
   </>);
 };

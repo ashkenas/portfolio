@@ -1,0 +1,45 @@
+@use 'base';
+@use 'sass:math';
+
+$arrow-width: 3px;
+$arrow-half-width: math.div($arrow-width, 2);
+
+.big-nav-btn {
+  @extend %unhide;
+  display: block;
+  background-color: base.$c-bg-content;
+  padding: 1rem;
+  margin: 1rem auto 0 auto;
+  max-width: 900px;
+  width: calc(100% - 2rem);
+  border-radius: .25rem;
+  transform: scale(0%);
+  text-decoration: none;
+  color: inherit;
+
+  & {
+    &::after, &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: $arrow-width;
+      border-radius: $arrow-half-width;
+      height: 16px;
+      right: 1rem;
+    }
+  
+    &::after {
+      bottom: calc(50% - $arrow-half-width);
+      background-color: base.$c-text;
+      transform-origin: 50% calc(100% - $arrow-half-width);
+      transform: rotate(315deg);
+    }
+  
+    &::before {
+      top: calc(50% - $arrow-half-width);
+      background-color: base.$c-text;
+      transform-origin: 50% $arrow-half-width;
+      transform: rotate(45deg);
+    }
+  }
+}
