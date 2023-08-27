@@ -1,5 +1,12 @@
 @use 'base';
 
+@keyframes drop-frames {
+  to {
+    transform: none;
+    opacity: 100%;
+  }
+}
+
 nav.navbar {
   display: flex;
   background-color: base.$c-bg-accent;
@@ -11,13 +18,13 @@ nav.navbar {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1.2em;
+    opacity: .01;
+    transform: translateY(-10px);
+    transition: padding-bottom .2s;
+    animation: .2s base.$spawn-curve 0s 1 normal forwards drop-frames;
   }
 
   a:has(~a:hover), a:hover ~ a {
     color: base.$c-text-light;
-  }
-
-  &:has(+.hero) a {
-    padding-bottom: 0;
   }
 }
