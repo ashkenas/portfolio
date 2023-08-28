@@ -17,10 +17,7 @@ export default function AnimatedLink({ to, replace, state, target, ...passThroug
     if (pathname === href) return;
     clearTimeout(tId);
     document.querySelector('main')?.classList.add('hide');
-    setTId(setTimeout(() => {
-      document.querySelector('main')?.classList.remove('hide');
-      doNavigation(e)
-    }, 250));
+    setTId(setTimeout(() => doNavigation(e), 250));
   }, [doNavigation, tId, setTId, pathname]);
 
   return (

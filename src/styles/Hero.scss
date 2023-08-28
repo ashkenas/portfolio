@@ -16,6 +16,6 @@
   overflow-x: hidden;
 }
 
-nav.navbar ~ .hero {
+nav.navbar + main > .hero {
   padding: 0 1rem 3rem 1rem;
 }

@@ -17,6 +17,7 @@ $arrow-half-width: math.div($arrow-width, 2);
   text-decoration: none;
   color: inherit;
   border: 1px solid base.$c-text-accent;
+  transition: box-shadow .2s;
 
   &::after, &::before {
     content: '';
@@ -27,6 +28,7 @@ $arrow-half-width: math.div($arrow-width, 2);
     height: 16px;
     right: 1rem;
     background-color: base.$c-text-accent;
+    transition: background-color .2s;
   }
 
   &::after {

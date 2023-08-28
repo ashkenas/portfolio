@@ -20,7 +20,7 @@ nav.navbar {
     font-size: 1.2em;
     opacity: .01;
     transform: translateY(-10px);
-    transition: padding-bottom .2s;
+    transition: padding-bottom .2s, color .2s;
     animation: .2s base.$spawn-curve 0s 1 normal forwards drop-frames;
   }
 
