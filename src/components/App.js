@@ -2,12 +2,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import '../styles/App.scss';
 import E404 from './404';
 import Home from './Home';
-import NavBar from './NavBar';
+import MainLayout from './MainLayout';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <NavBar />,
+    element: <MainLayout />,
     children: [
       {
         index: true,

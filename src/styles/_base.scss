@@ -15,7 +15,17 @@ $spawn-curve: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 %unhide {
-  animation: .5s $spawn-curve 0s 1 normal forwards unhide-frames;
+  animation: .5s 0s $spawn-curve 1 forwards unhide-frames;
+}
+
+main {
+  transform-origin: 50% 0%;
+  transform: none;
+}
+
+main.hide {
+  transform: scaleY(0%);
+  transition: transform .25s;
 }
 
 .has-accent2 {

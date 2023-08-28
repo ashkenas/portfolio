@@ -1,13 +1,12 @@
-import { Link, Outlet } from 'react-router-dom';
 import '../styles/NavBar.scss';
+import AnimatedLink from './AnimatedLink';
 
 export default function NavBar() {
   return (<>
     <nav className="navbar">
-      <Link to='/'>Home</Link>
-      <Link to='/work'>Work Experience</Link>
-      <Link to='/projects'>Projects</Link>
+      <AnimatedLink to='/'>Home</AnimatedLink>
+      <AnimatedLink to='/work'>Work Experience</AnimatedLink>
+      <AnimatedLink to='/projects'>Projects</AnimatedLink>
     </nav>
-    <Outlet />
   </>);
 };
