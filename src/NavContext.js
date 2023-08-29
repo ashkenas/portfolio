@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
-export const NavContext = createContext(null);
+export const NavContext = createContext([null, ()=>{}]);
 
 export function NavContextProvider({ children }) {
-  const sharedState = useState(null);
+  const sharedState = useState();
 
   return (
     <NavContext.Provider value={sharedState}>

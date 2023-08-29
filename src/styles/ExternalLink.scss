@@ -1,0 +1,23 @@
+@use 'base';
+
+a.external-link {
+  $shadow-color: scale-color(base.$c-text-accent2, $blackness: 50%);
+  display: inline-block;
+  background-color: base.$c-text-accent2;
+  color: white;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  box-shadow: 0px 3px 0px 0px $shadow-color;
+  transition: box-shadow .25s, transform .25s;
+
+  &:hover {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 0px 0px $shadow-color;
+  }
+
+  &:active {
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px 0px $shadow-color;
+  }
+}

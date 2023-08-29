@@ -3,6 +3,7 @@ import '../styles/App.scss';
 import E404 from './404';
 import Home from './Home';
 import MainLayout from './MainLayout';
+import Projects from './Projects';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: 'projects',
+        element: <Projects />
       },
       {
         path: '*',

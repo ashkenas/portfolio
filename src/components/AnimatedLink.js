@@ -18,7 +18,7 @@ export default function AnimatedLink({ to, replace, state, target, ...passThroug
     clearTimeout(tId);
     document.querySelector('main')?.classList.add('hide');
     setTId(setTimeout(() => doNavigation(e), 250));
-  }, [doNavigation, tId, setTId, pathname]);
+  }, [doNavigation, tId, setTId, pathname, href]);
 
   return (
     <Link {...passThrough} to={href}

@@ -1,6 +1,6 @@
 @use 'base';
 
-.title:has(+ p) {
+.title:has(+ :is(p, .tags)) {
   margin-bottom: .25em;
 }
 

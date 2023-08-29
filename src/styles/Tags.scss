@@ -1,0 +1,14 @@
+@use 'base';
+
+.tag {
+  display: inline-block;
+  margin-right: 1rem;
+  border-radius: 200000px;
+  color: white;
+  padding: .25rem .5rem;
+}
+
+.tags {
+  display: flex;
+  margin-bottom: .25rem;
+}
