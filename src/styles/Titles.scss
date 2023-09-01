@@ -1,7 +1,11 @@
 @use 'base';
 
-.horizontal > .title, .title:has(+ p) {
+.horizontal .title, .title:has(+ :is(p, .tags)) {
   margin-bottom: .25em;
+}
+
+.title {
+  color: base.$c-text;
 }
 
 .subtitle {

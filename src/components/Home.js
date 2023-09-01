@@ -26,7 +26,11 @@ export default function Home() {
       </BigNavButton>
       <BigNavButton seq={3} to='./projects'>
         <Title level={2}>Projects</Title>
-        <p>Also known as everything I wish I was paid to do.</p>
+        <p>
+          Information about and links to many of the projects I have worked on.
+          These include research tools, quality of life tools, games, class projects,
+          and various other applications.
+        </p>
       </BigNavButton>
     </main>
   );
