@@ -39,3 +39,11 @@ main.hide {
 .inline-block {
   display: inline-block;
 }
+
+.horizontal {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}

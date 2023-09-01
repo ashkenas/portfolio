@@ -1,0 +1,30 @@
+@keyframes loader-frames {
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes loader-fade-frames {
+  to {
+    opacity: 100%;
+  }
+}
+
+.loader {
+  margin: 1rem auto;
+  height: 5rem;
+  width: 5rem;
+
+  &::after {
+    content: '';
+    opacity: .01%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 200000px;
+    border: 2px solid transparent;
+    border-top-color: black;
+    border-left-color: black;
+    animation: .75s linear infinite forwards loader-frames, .5s linear .5s forwards loader-fade-frames;
+  }
+}

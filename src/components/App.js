@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, defer, RouterProvider } from 'react-router-dom';
 import '../styles/App.scss';
 import E404 from './404';
 import Home from './Home';
@@ -16,7 +16,14 @@ const router = createBrowserRouter([
       },
       {
         path: 'projects',
-        element: <Projects />
+        element: <Projects />,
+        loader: ({ request }) => {
+          return defer({
+            data: fetch('/projects.json', {
+              signal: request.signal
+            }).then(res => res.json())
+          });
+        }
       },
       {
         path: '*',
