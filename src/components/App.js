@@ -4,6 +4,7 @@ import E404 from './404';
 import Home from './Home';
 import MainLayout from './MainLayout';
 import Projects from './Projects';
+import Work from './Work';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,17 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+      },
+      {
+        path: 'work',
+        element: <Work />,
+        loader: ({ request }) => {
+          return defer({
+            data: fetch('/work.json', {
+              signal: request.signal
+            }).then(res => res.json())
+          });
+        }
       },
       {
         path: 'projects',

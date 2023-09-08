@@ -18,11 +18,11 @@ export default function Home() {
       </Hero>
       <Container seq={1}>
         <Title level={2}>About Me</Title>
-        <p>A little bit of this, a little bit of that. And a lot a bit of that other thing.</p>
+        <p>I will fill this out. Eventually. Maybe. Probably. Possibly.</p>
       </Container>
       <BigNavButton seq={2} to='./work'>
         <Title level={2}>Work Experience</Title>
-        <p>Also known as everything I was paid to do.</p>
+        <p>See where I've been and what I did there.</p>
       </BigNavButton>
       <BigNavButton seq={3} to='./projects'>
         <Title level={2}>Projects</Title>

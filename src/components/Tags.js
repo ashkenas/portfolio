@@ -8,6 +8,7 @@ function tagColor(tag) {
 }
 
 export default function Tags({ tags }) {
+  if (!tags || !tags.length) return <></>;
   return (
     <div className="tags">
       {tags.map(tag =>
