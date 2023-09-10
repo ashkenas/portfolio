@@ -1,1 +1,27 @@
 @use 'base';
+
+.work-pos {
+  h3 {
+    margin-bottom: 0;
+    font-style: italic;
+
+    &+p {
+      font-style: italic;
+    }
+  }
+}
+
+.horizontal:has(+ .work-pos) .title {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .work-pos .horizontal {
+    display: block;
+  }
+
+  .horizontal:has(+ .work-pos) {
+    display: block;
+    margin-bottom: .5rem;
+  }
+}
