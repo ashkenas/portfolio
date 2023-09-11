@@ -1,11 +1,22 @@
 @use 'base';
 
 .logos {
+  @extend %unhide;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  transform: scale(0);
+  animation-delay: 1s;
 
   a:not(:last-child) {
     margin-right: 1rem;
+  }
+
+  a {
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(110%);
+    }
   }
 }

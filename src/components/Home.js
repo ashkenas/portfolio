@@ -36,12 +36,12 @@ export default function Home() {
       <div class="logos">
         <a href="https://www.linkedin.com/in/jacob-ashkenas/"
           aria-label="Go to Jacob Ashkenas's LinkedIn page."
-          target="_blank">
+          target="_blank" rel="noreferrer">
           <img alt="LinkedIn Logo" src="LI-In-Bug.png" height={60} />
         </a>
         <a href="https://github.com/ashkenas"
           aria-label="Go to Jacob Ashkenas's GitHub page."
-          target="_blank">
+          target="_blank" rel="noreferrer">
           <img alt="GitHub Logo" src="github-mark.png" height={60} />
         </a>
       </div>
