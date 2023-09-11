@@ -4,6 +4,7 @@ import FlyIn from './FlyIn';
 import Hero from './Hero';
 import Subtitle from './Subtitle';
 import Title from './Title';
+import '../styles/Home.scss';
 
 export default function Home() {
   return (
@@ -28,10 +29,22 @@ export default function Home() {
         <Title level={2}>Projects</Title>
         <p>
           Information about and links to many of the projects I have worked on.
-          These include research tools, quality of life tools, games, class projects,
-          and various other applications.
+          These include research tools, quality of life tools, games, class
+          projects, and various other applications.
         </p>
       </BigNavButton>
+      <div class="logos">
+        <a href="https://www.linkedin.com/in/jacob-ashkenas/"
+          aria-label="Go to Jacob Ashkenas's LinkedIn page."
+          target="_blank">
+          <img alt="LinkedIn Logo" src="LI-In-Bug.png" height={60} />
+        </a>
+        <a href="https://github.com/ashkenas"
+          aria-label="Go to Jacob Ashkenas's GitHub page."
+          target="_blank">
+          <img alt="GitHub Logo" src="github-mark.png" height={60} />
+        </a>
+      </div>
     </main>
   );
 };

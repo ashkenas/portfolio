@@ -1,0 +1,11 @@
+@use 'base';
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  a:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
