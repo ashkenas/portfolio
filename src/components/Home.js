@@ -19,7 +19,11 @@ export default function Home() {
       </Hero>
       <Container seq={1}>
         <Title level={2}>About Me</Title>
-        <p>I will fill this out. Eventually. Maybe. Probably. Possibly.</p>
+        <p>
+          Building a smarter, better connected web, one project at a time.
+          Known to tinker with everything web-connected, interoperability on
+          any scale, and hardware on ocassion. 
+        </p>
       </Container>
       <BigNavButton seq={2} to='./work'>
         <Title level={2}>Work Experience</Title>
@@ -33,7 +37,7 @@ export default function Home() {
           projects, and various other applications.
         </p>
       </BigNavButton>
-      <div class="logos">
+      <div className="logos">
         <a href="https://www.linkedin.com/in/jacob-ashkenas/"
           aria-label="Go to Jacob Ashkenas's LinkedIn page."
           target="_blank" rel="noreferrer">

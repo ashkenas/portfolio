@@ -1,10 +1,11 @@
-$c-bg: #DFD9EC;
-$c-bg-accent: #C3ACCE;
-$c-bg-content: #FFFFFF;
-$c-text: #000000;
-$c-text-light: #E5D9FF;
-$c-text-accent: #89909F;
-$c-text-accent2: #538083;
+$c-bg: #393f41;
+$c-bg-accent: #474d50;
+$c-bg-content: #242729;
+$c-text: #efefef;
+$c-text-light: #d8e0ec;
+$c-text-accent: #d8e0ec;
+$c-text-accent2: #3595c6;
+$c-content-border: #717171;
 
 $spawn-curve: cubic-bezier(0.22, 0.61, 0.36, 1);
 
@@ -33,7 +34,7 @@ main.hide {
 }
 
 .has-white {
-  color: #FFFFFF;
+  color: #cae1ff;
 }
 
 .inline-block {
@@ -46,4 +47,9 @@ main.hide {
   justify-content: center;
   justify-content: space-between;
   align-items: flex-start;
+
+  a, a:visited {
+    color: inherit;
+    text-decoration-color: currentColor;
+  }
 }

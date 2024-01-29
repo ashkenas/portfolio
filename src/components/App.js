@@ -17,25 +17,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'work',
-        element: <Work />,
-        loader: ({ request }) => {
-          return defer({
-            data: fetch('/work.json', {
-              signal: request.signal
-            }).then(res => res.json())
-          });
-        }
+        element: <Work />
       },
       {
         path: 'projects',
-        element: <Projects />,
-        loader: ({ request }) => {
-          return defer({
-            data: fetch('/projects.json', {
-              signal: request.signal
-            }).then(res => res.json())
-          });
-        }
+        element: <Projects />
       },
       {
         path: '*',

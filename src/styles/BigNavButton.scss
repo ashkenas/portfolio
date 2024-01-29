@@ -16,7 +16,7 @@ $arrow-half-width: math.div($arrow-width, 2);
   transform: scale(0%);
   text-decoration: none;
   color: inherit;
-  border: 1px solid base.$c-text-accent;
+  border: 1px solid base.$c-content-border;
   transition: box-shadow .2s;
 
   &::after, &::before {
@@ -53,7 +53,7 @@ $arrow-half-width: math.div($arrow-width, 2);
 }
 
 .big-nav-btn:hover {
-  box-shadow: 0px 4px 10px 0px #00000030;
+  box-shadow: 0px 4px 10px 0px #80808030;
 
   &::after, &::before {
     background-color: base.$c-text;

@@ -12,7 +12,7 @@ export default function WorkExp({ exp, seq }) {
         {exp.location && <p>{exp.location}</p>}
       </Horizontal>
       {exp.positions.map((pos, i) =>
-        <div class="work-pos">
+        <div className="work-pos" key={i}>
           <Horizontal>
             <h3>{pos.title}</h3>
             <p>

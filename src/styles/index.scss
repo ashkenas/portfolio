@@ -8,6 +8,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   background-color: base.$c-bg;
+  color: base.$c-text;
 }
 
 *, *::after, *::before {

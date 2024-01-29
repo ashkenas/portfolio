@@ -24,7 +24,13 @@ nav.navbar {
     animation: .2s base.$spawn-curve 0s 1 normal forwards drop-frames;
   }
 
-  a:has(~a:hover), a:hover ~ a {
+  a:has(~ a:hover), a:hover ~ a {
     color: base.$c-text-light;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav.navbar {
+    justify-content: center;
   }
 }
